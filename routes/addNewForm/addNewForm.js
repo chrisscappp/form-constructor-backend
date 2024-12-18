@@ -6,7 +6,7 @@ const addNewForm = async (req, res) => {
 
 	try {
 		const normalizedForm = normalizeFormData(body)
-		const formQuestions = normalizedForm.questions
+		const formQuestions = [...normalizedForm.questions]
 		delete normalizedForm.questions
 
 		await addItemToCollection(collections.forms, normalizedForm.id, normalizedForm)

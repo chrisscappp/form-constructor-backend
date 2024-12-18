@@ -3,6 +3,7 @@ const getFormSimplifyList = require("./getFormSimplifyList/getFormSimplifyList")
 const getFormDetail = require("./getFormDetail/getFormDetail")
 const getFormQuestions = require("./getFormQuestions/getFormQuestions")
 const getReleaseForm = require("./getReleaseForm/getReleaseForm")
+const getFormFilledStats = require("./getFormFilledStats/getFormFilledStats")
 const addNewForm = require("./addNewForm/addNewForm")
 const updateFormData = require("./updateFormData/updateFormData")
 const deleteFormData = require("./deleteFormData/deleteFormData")
@@ -16,6 +17,7 @@ module.exports = {
 	getFormDetail,
 	getFormQuestions,
 	getReleaseForm,
+	getFormFilledStats,
 	addNewForm,
 	updateFormData,
 	deleteFormData,

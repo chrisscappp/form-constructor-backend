@@ -7,7 +7,7 @@ const updateFormData = async (req, res) => {
 
 	try {
 		const normalizedForm = normalizeFormData(body)
-		const formQuestions = normalizedForm.questions
+		const formQuestions = [...normalizedForm.questions]
 		delete normalizedForm.questions
 
 		await updateCollectionItem(collections.forms, formId, normalizedForm)

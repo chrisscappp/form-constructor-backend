@@ -23,7 +23,10 @@ const getReleaseForm = async (req, res) => {
 			description: formDetail.description,
 			questions: mappedQuestions
 		}
-  		res.send(productionForm)
+  		res.send({
+			questionCount: formDetail.questionCount,
+			productionForm
+		})
 	} catch (e) {
 		console.error('Error has been occured: ', e)
 		res.status(500).send('Iternal server error')

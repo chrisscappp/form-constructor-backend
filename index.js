@@ -4,6 +4,7 @@ const {
   getFormSimplifyList,
   getFormDetail,
   getFormQuestions,
+  getFormFilledStats,
   addNewForm,
   updateFormData,
   deleteFormData,
@@ -32,6 +33,9 @@ app.route("/getFormQuestions").post(getFormQuestions)
 
 // get release form (for the microservice of passing the form)
 app.route("/getReleaseForm/:formId").get(getReleaseForm)
+
+// get filled form stats
+app.route("/getFormFilledStats/:formId").get(getFormFilledStats)
 
 // add new form to list
 app.route("/addNewForm").post(addNewForm)

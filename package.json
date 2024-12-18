@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev:server": "nodemon ./index.js",
     "start:server": "node ./index.js"
   },
   "author": "alexandroo4",
@@ -12,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "firebase": "^11.0.2"
+    "firebase": "^11.0.2",
+    "write-excel-file": "^2.0.10"
   }
 }
