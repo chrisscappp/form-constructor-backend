@@ -11,13 +11,6 @@ const firebaseConfig = {
   measurementId: "G-RDMZBZH43V"
 }
 
-let admin = require("firebase-admin")
-let serviceAccount = require("../../form-constructor-app-staging-firebase-adminsdk-ief2e-69d7069dfe.json")
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-})
-
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 const db = getFirestore(firebaseApp)
 
