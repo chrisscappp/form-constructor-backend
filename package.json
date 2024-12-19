@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "firebase": "^11.0.2",
+    "firebase-admin": "^13.0.1",
     "write-excel-file": "^2.0.10"
   }
 }
