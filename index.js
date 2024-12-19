@@ -12,8 +12,6 @@ const {
   getReleaseForm,
   completeForm
 } = require("./routes")
-const admin = require('firebase-admin')
-admin.initializeApp()
 
 const app = express()
 const port = 1111
