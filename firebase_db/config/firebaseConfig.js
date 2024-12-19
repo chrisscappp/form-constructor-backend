@@ -1,6 +1,5 @@
 const firebase = require("firebase/app")
 const { getFirestore } = require("firebase/firestore/lite")
-const { initializeApp } = require("firebase-admin")
 
 const firebaseConfig = {
   apiKey: "AIzaSyDHf1OYD2P-XotAULEmlZZPaqRCQ4WYPM8",
