@@ -27,6 +27,8 @@ const updateEmployeeInfo = async (req, res) => {
 			}
 		})
 
+		// update
+
 		await updateCollectionItem(collections.employees, body.id, {
 			...body,
 			events: employeeEvents,
