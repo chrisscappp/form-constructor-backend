@@ -16,7 +16,6 @@ const getFormFilledStats = async (req, res) => {
 		excelTableData.push(row)
 	})
 	const fileName = `${formId}.xlsx`
-	console.log('data')
 	const filePath = path.resolve(`utils/files/${fileName}`)
 	
 	await writeXlsxFile(excelTableData, {

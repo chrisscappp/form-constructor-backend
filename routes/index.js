@@ -1,4 +1,6 @@
 // routes
+
+// form
 const getFormSimplifyList = require("./getFormSimplifyList/getFormSimplifyList")
 const getFormDetail = require("./getFormDetail/getFormDetail")
 const getFormQuestions = require("./getFormQuestions/getFormQuestions")
@@ -9,6 +11,12 @@ const updateFormData = require("./updateFormData/updateFormData")
 const deleteFormData = require("./deleteFormData/deleteFormData")
 const releaseForm = require("./releaseForm/releaseForm")
 
+// employees
+const getEvents = require("./getEvents/getEvents")
+const getEmployeesList = require("./getEmployeesList/getEmployees")
+const getEmployeeDetail = require("./getEmployeeDetail/getEmployeeDetail")
+const updateEmployeeInfo = require("./updateEmployeeInfo/updateEmployeeInfo")
+
 // user routes
 const completeForm = require("./completeForm/completeForm")
 
@@ -18,6 +26,10 @@ module.exports = {
 	getFormQuestions,
 	getReleaseForm,
 	getFormFilledStats,
+	getEvents,
+	getEmployeesList,
+	getEmployeeDetail,
+	updateEmployeeInfo,
 	addNewForm,
 	updateFormData,
 	deleteFormData,

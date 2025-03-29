@@ -17,7 +17,9 @@ const db = getFirestore(firebaseApp)
 const collections = {
 	forms: "forms",
   questions: "questions",
-  completedForms: "completed-forms"
+  completedForms: "completed-forms",
+  employees: "employees",
+  employeeEvents: "employee-events"
 }
 
 module.exports = { collections, db }

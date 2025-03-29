@@ -10,7 +10,11 @@ const {
   deleteFormData,
   releaseForm,
   getReleaseForm,
-  completeForm
+  completeForm,
+  getEvents,
+  getEmployeesList,
+  getEmployeeDetail,
+  updateEmployeeInfo
 } = require("./routes")
 
 const app = express()
@@ -36,6 +40,18 @@ app.route("/getReleaseForm/:formId").get(getReleaseForm)
 
 // get filled form stats
 app.route("/getFormFilledStats/:formId").get(getFormFilledStats)
+
+// get all events
+app.route("/getEvents").get(getEvents)
+
+// get employees list
+app.route("/getEmployeesList").get(getEmployeesList)
+
+// get employee detail
+app.route("/getEmployeeDetail/:employeeId").get(getEmployeeDetail)
+
+// update employee info
+app.route("/updateEmployeeInfo").put(updateEmployeeInfo)
 
 // add new form to list
 app.route("/addNewForm").post(addNewForm)
